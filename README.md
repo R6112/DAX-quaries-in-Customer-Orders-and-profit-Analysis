@@ -21,8 +21,11 @@ This repository contains a Power BI dashboard that visualizes and analyzes custo
 Key DAX queries used for calculations:
 
 OrderCount = COUNTROWS('Orders')
+
 UniqueOrderCount = DISTINCTCOUNT('Orders'[OrderID])
+
 TotalProfitCost = SUM('Orders'[Profit]) + SUM('Orders'[Cost])
+
 TotalSumOrders= SUM('Orders'[OrderAmount])
 
 
@@ -31,6 +34,4 @@ TotalSumOrders= SUM('Orders'[OrderAmount])
 ![Screenshot 2025-01-23 142614](https://github.com/user-attachments/assets/18b5da7e-461c-40f7-ae19-c156283fd402)
 ![Screenshot 2025-01-23 142543](https://github.com/user-attachments/assets/78e42af6-1213-49ce-9a60-556a7c539fff)
 
-**UniqueOrderCount** = DISTINCTCOUNT('Orders'[OrderID])
-**TotalProfitCost** = SUM('Orders'[Profit]) + SUM('Orders'[Cost])
-**TotalSumOrders **= SUM('Orders'[OrderAmount])
+
